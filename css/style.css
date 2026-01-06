@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  width: 100%;
+  padding: 0 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img_menu {
+  width: 80px;
+  height: 80px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 0 5px;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.menu a:hover {
+  color: red;
+  transform: translateY(-2px);
+}
+
+.main {
+  background-image: url("../assets/img/treinando3.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.divMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.info h1 {
+  color: white;
+  padding: 5px;
+  font-size: 80px;
+}
+
+.info h1 span {
+  color: red;
+}
+
+.info h3 {
+  color: white;
+}
+
+.show-on-scroll {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: 0.9s ease;
+}
+
+.show-on-scroll.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.show-on-scroll-top {
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: 0.9s ease;
+}
+
+.show-on-scroll-top.activee {
+  opacity: 1;
+  transform: translateY(0);
+}
