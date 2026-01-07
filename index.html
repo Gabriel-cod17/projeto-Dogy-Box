@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dogy Box</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Lobster&family=Protest+Strike&family=Roboto+Slab:wght@100..900&family=Story+Script&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- configuração do header com a logo e os itens da nav  -->
-    <header id="header" class="header show-on-scroll-top">
-      <div id="container" class="container">
+    <header id="header" class="header">
+      <div id="container" class="container show-on-scroll-cima">
         <img class="img_menu" src="assets/img/ArteDogy2.png" alt="" />
 
         <nav id="menu" class="menu">
@@ -22,8 +28,8 @@
     </header>
 
     <!-- configurando a main, parte principal -->
-    <main id="main" class="main show-on-scroll">
-      <div id="divMain" class="divMain show-on-scroll-top">
+    <main id="main" class="main">
+      <div id="divMain" class="divMain show-on-scroll">
         <div id="info" class="info">
           <h1>
             <span>Dogy</span>
@@ -31,16 +37,71 @@
           </h1>
           <h3>
             Transforme seu corpo, supere seus limites e alcance seus objetivos
-            com os melhores treinos de crossfit
+            <br />com os melhores treinos de crossfit
           </h3>
         </div>
 
         <div id="divButton" class="divButton">
-          <button>Agenda uma aula Experimental</button>
-          <button>Conheça nossos planos</button>
+          <button id="button" class="buttonPri">
+            Agenda uma aula experimental
+          </button>
+          <button id="button" class="buttonSegun">Conheça nossos planos</button>
         </div>
       </div>
     </main>
+
+    <!-- Configurando a sectionSobre, onde explique um pouco mais sobre a empresa -->
+
+    <section id="sectionSobre" class="sectionSobre">
+      <div id="divSobre" class="divSobre">
+        <div id="divInfo" class="divInfo show-on-scroll">
+          <h1>Sobre nós</h1>
+          <p>
+            O Dogy Box é mais do que uma academia. É uma comunidade dedicada a
+            transformar vidas através do CrossFit, com treinos intensos, coaches
+            experientes e um ambiente acolhedor.
+          </p>
+        </div>
+
+        <div id="divDois" class="divDois show-on-scroll-baixo">
+          <div id="divTreinosP" class="divTreinosP">
+            <div id="divTreinosPImg" class="divTreinosPImg">
+              <img src="assets/img/alvo-circular.png" alt="" />
+            </div>
+            <h3>Treinos Personalizado</h3>
+            <p>Programas adptados ao seu nível e ojetivos</p>
+          </div>
+
+          <div id="divTreinosP" class="divTreinosP">
+            <div id="divTreinosPImg" class="divTreinosPImg">
+              <img src="assets/img/toca-aqui.png" alt="" />
+            </div>
+
+            <h3>Comunidade Forte</h3>
+            <p>Treine com pessoas motivadas e inspiradoras</p>
+          </div>
+
+          <div id="divTreinosP" class="divTreinosP">
+            <div id="divTreinosPImg" class="divTreinosPImg">
+              <img src="assets/img/trofeu.png" alt="" />
+            </div>
+            <h3>Resultados Comprovados</h3>
+            <p>Metodologia eficiente para alcançar suas metas</p>
+          </div>
+
+          <div id="divTreinosP" class="divTreinosP">
+            <div id="divTreinosPImg" class="divTreinosPImg">
+              <img src="assets/img/incendio.png" alt="" />
+            </div>
+
+            <h3>Energia e Motivação</h3>
+            <p>Ambiente energético que te impulsiona a superar limites</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <article></article>
 
     <script src="javascript/main.js"></script>
   </body>
