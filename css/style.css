@@ -321,15 +321,33 @@
 }
 
 .div_Hit {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
   border: 1px solid #fff;
   border-radius: 20px;
+  width: 340px;
+  height: 300px;
+  margin-top: 50px;
+}
+.div_Hit::before {
+  position: absolute;
+  content: "";
+  inset: 0;
   background-image: url("../assets/img/alon-coach.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 340px;
-  height: 300px;
-  margin-top: 50px;
+  z-index: 0;
+  transition: transform 0.5s ease;
+}
+
+.div_Hit:hover::before {
+  transform: scale(1.1);
 }
 
 .quarenta_min {
@@ -352,7 +370,8 @@
 }
 
 .p_Wod,
-.p_Foco {
+.p_Foco,
+.amrap {
   color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 18px;
@@ -362,13 +381,227 @@
 }
 
 .p_wod_Treino,
-.p_Foco_Condi {
+.p_Foco_Condi,
+.p_Amrap {
   color: #fff;
   font-family: "Roboto Slab", serif;
   font-size: 15px;
   margin-left: 10px;
   margin-bottom: 20px;
   z-index: 2;
+}
+
+/* Estilizando a parte quatro da página  */
+
+.section_Horarios {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/img/Fundo_Horarios.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article_Horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.calendario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 0, 0, 0.205);
+  margin-bottom: 30px;
+}
+
+.calendario img {
+  width: 50px;
+  height: 50px;
+}
+
+.info_Horarios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.h2_Horarios {
+  color: red;
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+}
+
+.h3_Horarios {
+  color: #898989;
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+}
+
+.id_Seg_Sab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #4a4a4ac9;
+  place-items: center;
+  width: 350px;
+  height: 80px;
+  border: 1px solid #4a4a4ac9;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.seg_Sex,
+.sab {
+  display: flex;
+  width: 120px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: red;
+  transition: transform 0.25s ease;
+}
+
+.seg_Sex:hover,
+.sab:hover {
+  transform: scale(1.08);
+}
+
+.tabela_Horarios {
+  display: grid;
+  grid-template-rows: repeat(9, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tabela_Horarios_Sab {
+  display: none;
+  grid-template-rows: 1, 1fr;
+  gap: 10px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.display {
+  display: grid;
+}
+
+.display_none {
+  display: none;
+}
+
+.clicou {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.seis,
+.sete,
+.oito,
+.nove,
+.onze,
+.dezessete,
+.dezoito,
+.dezenove,
+.vinte,
+.vinte_E_Um {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #4a4a4ac9;
+  border: 1px solid #4a4a4ac9;
+  border-radius: 20px;
+  width: 600px;
+}
+
+.info_Seis,
+.info_Sete,
+.info_Oito,
+.info_Nove,
+.info_Onze,
+.info_Dezessete,
+.info_Dezoito,
+.info_Dezenove,
+.info_Vinte,
+.info_Vinte_E_Um {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.img_relogio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0, 0.205);
+  overflow: hidden;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.img_relogio img {
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.horario_seis,
+.horario_Sete,
+.horario_Oito,
+.horario_Nove,
+.horario_Onze,
+.horario_Dezessete,
+.horario_Dezoito,
+.horario_Dezenove,
+.horario_Vinte,
+.horario_Vinte_E_Um {
+  font-family: "Roboto Slab", serif;
+  font-size: 20px;
+  color: white;
+}
+
+.bt_Reserve {
+  border: 1px solid red;
+  border-radius: 20px;
+  background-color: red;
+  color: white;
+  width: 120px;
+  height: 50px;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
 }
 
 /* Configuração da entrada e saida das divs, quando entra na página */
