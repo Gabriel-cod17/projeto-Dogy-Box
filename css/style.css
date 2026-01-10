@@ -6,6 +6,28 @@
   box-sizing: border-box;
 }
 
+/* Estilizando e configurando a parte de carregar toda a página e aparecer ele 100% */
+
+.carregando {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.img_Carregando img {
+  width: 100px;
+  height: 100px;
+}
+
+.escondido {
+  display: none;
+}
+
 /* Estilizando a parte do hearde que é o cabeçalho e a parte da nav */
 
 .header {
@@ -150,6 +172,8 @@
   letter-spacing: 2px;
 }
 
+/* estilizando na segunda parte da página os itens treinosP, comunidade e etc... */
+
 .div_Sobre_Dois {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -250,6 +274,8 @@
   font-size: 20px;
   margin-top: 20px;
 }
+
+/* Estilizando na parte de três, os itens do display grid, do wod, condicionamente e amrap  */
 
 .div_Treino_Dois {
   display: grid;
@@ -394,8 +420,6 @@
 /* Estilizando a parte quatro da página  */
 
 .section_Horarios {
-  display: flex;
-  flex-direction: column;
   background-image: url("../assets/img/Fundo_Horarios.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -413,6 +437,8 @@
   margin: 0 auto;
 }
 
+/* Estilizando a parte de info, calendário */
+
 .calendario {
   display: flex;
   justify-content: center;
@@ -423,7 +449,8 @@
   width: 100px;
   height: 100px;
   background-color: rgba(255, 0, 0, 0.205);
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .calendario img {
@@ -485,6 +512,8 @@
 .sab:hover {
   transform: scale(1.08);
 }
+
+/* estilizando as tabelas de horários */
 
 .tabela_Horarios {
   display: grid;
@@ -602,6 +631,7 @@
   height: 50px;
   font-family: "Roboto Slab", serif;
   font-size: 15px;
+  cursor: pointer;
 }
 
 /* Configuração da entrada e saida das divs, quando entra na página */

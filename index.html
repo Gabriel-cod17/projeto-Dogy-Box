@@ -13,8 +13,13 @@
     />
   </head>
   <body>
+    <section id="carregando" class="carregando">
+        <figure class="img_Carregando">
+          <img src="assets/img/ArteDogy2.png" alt="LOGO DA DOGY BOX / ACADEMIA DE CROSSFIT" loading="lazy" />
+      </div>
+    </section>
     <!-- configuração do header com a logo e os itens da nav  -->
-    <header id="header" class="header">
+    <header id="header" class="header escondido site">
       <div id="container" class="container show-on-scroll-cima">
         <img
           class="img_menu"
@@ -33,7 +38,7 @@
     </header>
 
     <!-- configurando a main, parte principal -->
-    <main id="main" class="main">
+    <main id="main " class="main escondido site">
       <article id="article_Main" class="article_Main show-on-scroll">
         <div id="info" class="info">
           <h1>
@@ -59,7 +64,7 @@
 
     <!-- Configurando a section sobre_Dogy_Box, onde explique um pouco mais sobre a empresa -->
 
-    <section id="sobre_Dogy_Box" class="sobre_Dogy_Box">
+    <section id="sobre_Dogy_Box" class="sobre_Dogy_Box escondido site">
       <!-- article sobre o box -->
 
       <article id="article_Sobre" class="article_Sobre">
@@ -128,16 +133,16 @@
 
     <!-- Configurando a parte que mostra como é a metodologia na dogy box -->
 
-    <section id="section_Treino" class="section_Treino">
+    <section id="section_Treino" class="section_Treino escondido site">
       <article id="article_Treino" class="article_Treino">
-        <div id="div_Treinos" class="div_Treinos">
+        <div id="div_Treinos" class="div_Treinos show-on-scroll-cima">
           <p class="metodologia">Metodologia dos Treinos</p>
           <p class="variedade">
             Variedade de treinos intensos e eficientes, do iniciante ao avançado
           </p>
         </div>
 
-        <div id="div_Treino_Dois" class="div_Treino_Dois">
+        <div id="div_Treino_Dois" class="div_Treino_Dois show-on-scroll-baixo">
           <!-- \\ -->
           <div id="div_Wod" class="div_Wod">
             <div class="quarenta_min">
@@ -173,27 +178,27 @@
       </article>
     </section>
 
-    <section id="section_Horarios" class="section_Horarios">
+    <section id="section_Horarios" class="section_Horarios escondido site">
       <article id="article_Horarios" class="article_Horarios">
         <!-- \figure\ -->
-        <figure class="calendario">
+        <figure class="calendario show-on-scroll">
           <img src="assets/img/data-limite.png" alt="" loading="lazy" />
         </figure>
         <!-- \div \ -->
-        <div class="info_Horarios">
+        <div class="info_Horarios show-on-scroll">
           <h2 class="h2_Horarios">Horários</h2>
           <h3 class="h3_Horarios">
             Escolha o melhor horário para a transformação
           </h3>
         </div>
         <!-- \div\ -->
-        <div id="id_Seg_Sab" class="id_Seg_Sab">
+        <div id="id_Seg_Sab" class="id_Seg_Sab show-on-scroll">
           <div id="seg_Sex" class="seg_Sex">Seg-Sex</div>
           <div id="sab" class="sab">Sab</div>
         </div>
 
-        <!-- div -->
-        <div id="tabela_Horarios" class="tabela_Horarios">
+        <!-- div  das tabelas de horários da semana-->
+        <div id="tabela_Horarios" class="tabela_Horarios show-on-scroll-cima">
           <!-- div -->
           <div id="seis" class="seis">
             <div id="info_Seis" class="info_Seis">
@@ -290,8 +295,11 @@
           </div>
         </div>
 
-        <!-- div -->
-        <div id="tabela_Horarios_Sab" class="tabela_Horarios_Sab">
+        <!-- div das tabelas de horário de sábado-->
+        <div
+          id="tabela_Horarios_Sab"
+          class="tabela_Horarios_Sab show-on-scroll-cima"
+        >
           <!-- div -->
 
           <div id="seis" class="seis">
@@ -308,6 +316,6 @@
       </article>
     </section>
 
-    <script src="javascript/main.js"></script>
+    <script src="javascript/main.js" defer></script>
   </body>
 </html>
