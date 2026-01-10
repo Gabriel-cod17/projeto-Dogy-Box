@@ -73,5 +73,5 @@ window.addEventListener("load", () => {
     site.forEach((s) => {
       s.classList.remove("escondido");
     });
-  }, 2000);
+  }, 5000);
 });
