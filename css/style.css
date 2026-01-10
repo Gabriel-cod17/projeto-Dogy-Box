@@ -64,12 +64,19 @@
 
 /* Estilizando a parte do main, parte principal da página */
 
-.main {
-  background-image: url("../assets/img/treinando3.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+.header_Figure_Img {
+  position: relative;
+  overflow: hidden;
+}
+
+.header_Figure_Img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 .article_Main {
   display: flex;
@@ -526,7 +533,7 @@
 
 .tabela_Horarios_Sab {
   display: none;
-  grid-template-rows: 1, 1fr;
+  grid-template-rows: 1fr;
   gap: 10px;
   margin-top: 20px;
   position: relative;
