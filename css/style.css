@@ -975,6 +975,8 @@
   transform: translateY(0);
 }
 
+/* configuração mobile/tablet 1067px */
+
 @media (max-width: 1067px) {
   .div_Sobre_Dois {
     grid-template-columns: repeat(2, 1fr);
@@ -1007,6 +1009,8 @@
   }
 }
 
+/* configuração mobile 823px*/
+
 @media (max-width: 823px) {
   /* Menu */
   .container {
@@ -1027,6 +1031,8 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* configuração mobile 620px*/
 
 @media (max-width: 620px) {
   /* Primeira parte */
@@ -1071,6 +1077,8 @@
     font-size: 12px;
   }
 }
+
+/* configuração mobile */
 
 @media (max-width: 360px) {
   .div_Agendar h3 {

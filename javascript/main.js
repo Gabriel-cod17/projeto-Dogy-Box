@@ -14,7 +14,7 @@ const img_Menu_Mobile = document.getElementById("img_Menu_Mobile");
 const mobile = document.getElementById("mobile");
 const img_Menu_Aberto = document.getElementById("img_Menu_Aberto");
 
-// configuração da parte do menu
+// configuração da parte do menu de clicar e voltar
 
 img_Menu_Mobile.addEventListener("click", () => {
   if (img_Menu_Aberto.classList.contains("fechado")) {
