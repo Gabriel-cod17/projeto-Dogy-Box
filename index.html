@@ -36,8 +36,8 @@
           <a href="#section_Horarios">Horários</a>
           <a href="#section_Contato">Contato</a>
           
-        <button class="img_Menu_Mobile">
-        <img src="assets/img/menu-aberto.png" alt="">
+        <button id="img_Menu_Mobile" class="img_Menu_Mobile">
+        <img id="img_Menu_Aberto" class="fechado" src="assets/img/menu-aberto.png" alt="botão mobile" loading="lazy">
        </button>
         </nav>
       </div>
@@ -49,11 +49,16 @@
 
       <div id="container_Mobile" class="container_Mobile show-on-scroll-cima">  
         <nav id="menu_mobile" class="menu_mobile">
-          <a href="#sobre_Dogy_Box">Sobre</a>
-          <a href="#section_Treino">Treinos</a>
-          <a href="#section_Horarios">Horários</a>
-          <a href="#section_Contato">Contato</a>
+          <a class="menu_Mobile_A" href="#sobre_Dogy_Box">Sobre</a>
+          <a class="menu_Mobile_A"  href="#section_Treino">Treinos</a>
+          <a class="menu_Mobile_A"  href="#section_Horarios">Horários</a>
+          <a class="menu_Mobile_A"  href="#section_Contato">Contato</a>
         </nav>
+         <a class="menu_Mobile_A"   href="https://wa.me/5562993575415?text=Oi,%20quero%20agendar%20uma%20aula%20experimental" target="_blank">
+            <button class="button_Menu_Agendar">
+            Agenda uma aula experimental
+          </button>
+          </a>
       </div>
     </header>
     
@@ -71,17 +76,21 @@
           </h1>
           <h3>
             Transforme seu corpo, supere seus limites e alcance seus objetivos
-            <br />com os melhores treinos de <strong>crossfit</strong>
+            <br />com os melhores treinos de <strong>cross training</strong>
           </h3>
         </div>
 
         <div id="divButton" class="divButton">
-          <button id="button_Agenda" class="buttonPri">
+          <a href="https://wa.me/5562993575415?text=Oi,%20quero%20agendar%20uma%20aula%20experimental" target="_blank">
+            <button id="button_Agenda" class="buttonPri">
             Agenda uma aula experimental
           </button>
-          <button id="button_Conheça" class="buttonSegun">
+          </a>
+          <a href="https://wa.me/5562993575415?text=Oi,%20quero%20conhecer%20sobre%20os%20planos" target="_blank">
+            <button id="button_Conheça" class="buttonSegun">
             Conheça nossos planos
           </button>
+          </a>
         </div>
       </article>
     </main>
@@ -95,8 +104,8 @@
         <div id="div_Sobre" class="div_Sobre show-on-scroll">
           <h2>Sobre a Dogy Box</h2>
           <p>
-            A Dogy Box é mais do que uma academia. É uma comunidade dedicada a
-            transformar vidas através do <strong>CrossFit</strong>, com treinos
+            A Dogy Box é mais do que um <strong>box de cross</strong>. É uma comunidade dedicada a
+            transformar vidas através do <strong>Cross Training</strong>, com treinos
             intensos, coaches experientes e um ambiente acolhedor.
           </p>
         </div>
@@ -185,7 +194,7 @@
               <p>20 min</p>
             </div>
 
-            <p class="p_Foco">Strength & Conditioningy</p>
+            <p class="p_Foco">Strength & Conditioning</p>
             <p class="p_Foco_Condi">Foco em força e condicionamento físico</p>
           </div>
 
@@ -196,7 +205,7 @@
             </div>
 
             <p class="amrap">Amrap</p>
-            <p class="p_Amrap">Máximo de repetições possível em tempo</p>
+            <p class="p_Amrap">Máximo de repetições possíveis em tempo</p>
           </div>
         </div>
       </article>
@@ -206,7 +215,7 @@
       <article id="article_Horarios" class="article_Horarios">
         <!-- \figure\ -->
         <figure class="calendario show-on-scroll">
-          <img src="assets/img/data-limite.png" alt="" loading="lazy" />
+          <img src="assets/img/data-limite.png" alt="foto do calendário" loading="lazy" />
         </figure>
         <!-- \div \ -->
         <div class="info_Horarios show-on-scroll">
@@ -222,118 +231,158 @@
         </div>
 
         <!-- div  das tabelas de horários da semana-->
-        <div id="tabela_Horarios" class="tabela_Horarios show-on-scroll-cima">
+        <div id="tabela_Horarios" class="tabela_Horarios show-on-scroll">
           <!-- div -->
           <div id="seis" class="seis">
             <div id="info_Seis" class="info_Seis">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_seis">06:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+            <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2006:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
 
           <!-- div -->
           <div id="sete" class="sete">
             <div id="info_Sete" class="info_Sete">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Sete">07:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+             <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2007:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
 
           <div id="oito" class="oito">
             <div id="info_Oito" class="info_Oito">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Oito">08:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+             <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2008:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
           <div id="onze" class="onze">
             <div id="info_Onze" class="info_Onze">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Onze">11:30</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+            <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2011:30" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
 
           <div id="dezessete" class="dezessete">
             <div id="info_Dezessete" class="info_Dezessete">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Dezessete">17:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+           <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2017:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
 
           <!-- div -->
           <div id="dezoito" class="dezoito">
             <div id="info_Dezoito" class="info_Dezoito">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Dezoito">18:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+             <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2018:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
           <div id="dezenove" class="dezenove">
             <div id="info_Dezenove" class="info_Dezenove">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training"  loading="lazy"/>
               </figure>
               <p class="horario_Dezenove">19:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+              <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2019:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
           <div id="vinte" class="vinte">
             <div id="info_Vinte" class="info_Vinte">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Vinte">20:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+             <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2020:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
           <div id="vinte_E_Um" class="vinte_E_Um">
             <div id="info_Vinte_E_Um" class="info_Vinte_E_Um">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_Vinte_E_Um">21:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+              <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20às%2021:00" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
         </div>
 
         <!-- div das tabelas de horário de sábado-->
         <div
           id="tabela_Horarios_Sab"
-          class="tabela_Horarios_Sab show-on-scroll-cima"
+          class="tabela_Horarios_Sab show-on-scroll"
         >
           <!-- div -->
 
           <div id="seis" class="seis">
             <div id="info_Seis" class="info_Seis">
               <figure class="img_relogio">
-                <img src="assets/img/relogio.png" alt="" />
+                <img src="assets/img/relogio.png" alt="foto de um relógio na dogy box / crossfit / cross training" loading="lazy" />
               </figure>
               <p class="horario_seis">09:00</p>
             </div>
-            <button id="bt_Reserve" class="bt_Reserve">RESERVE</button>
+             <a href="https://wa.me/5562993575415?text=Oi,%20quero%20fazer%20uma%20aula%20experimental%20no%20aulão" target="_blank">
+              <button id="bt_Agende" class="bt_Agende">
+                Agende
+              </button>
+            </a>
           </div>
           <!-- div -->
         </div>
@@ -377,7 +426,10 @@
         <div class="div_Agendar show-on-scroll-baixo  ">
           <h3>Pronto para começar sua jornada?</h3>
           <h4>Agende uma aula experimental gratuita e descubra como o <strong>cross training</strong> pode transformar sua vida</h4>
-          <button class="button_Agendar">Garanta sua aula gratuita</button>
+          <a href="https://wa.me/5562993575415?text=Oi,%20quero%20garantir%20minha%20aula%20gratuita" target="_blank">
+            <button class="button_Agendar">Garanta sua aula gratuita
+            </button>
+          </a>
         </div>
       </article>
     </section>

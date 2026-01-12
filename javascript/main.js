@@ -8,7 +8,44 @@ const sab = document.getElementById("sab");
 const tabela_Horarios = document.getElementById("tabela_Horarios");
 const tabela_Horarios_Sab = document.getElementById("tabela_Horarios_Sab");
 const carregando = document.getElementById("carregando");
+const menu_Mobile_A = document.querySelectorAll(".menu_Mobile_A");
 const site = document.querySelectorAll(".site");
+const img_Menu_Mobile = document.getElementById("img_Menu_Mobile");
+const mobile = document.getElementById("mobile");
+const img_Menu_Aberto = document.getElementById("img_Menu_Aberto");
+
+// configuração da parte do menu
+
+img_Menu_Mobile.addEventListener("click", () => {
+  if (img_Menu_Aberto.classList.contains("fechado")) {
+    img_Menu_Aberto.src = "../assets/img/botao-fechar.png";
+    img_Menu_Aberto.classList.toggle("aberto");
+    img_Menu_Aberto.classList.remove("fechado");
+    mobile.style.display = "flex";
+  } else {
+    img_Menu_Aberto.src = "../assets/img/menu-aberto.png";
+    img_Menu_Aberto.classList.add("fechado");
+    img_Menu_Aberto.classList.remove("aberto");
+    mobile.style.display = "none";
+  }
+});
+
+// Configuração de quanto clicar no itens do menu ele fecha o menu e vai para a aba
+menu_Mobile_A.forEach((a) => {
+  a.addEventListener("click", () => {
+    if (img_Menu_Aberto.classList.contains("fechado")) {
+      img_Menu_Aberto.src = "../assets/img/botao-fechar.png";
+      img_Menu_Aberto.classList.toggle("aberto");
+      img_Menu_Aberto.classList.remove("fechado");
+      mobile.style.display = "flex";
+    } else {
+      img_Menu_Aberto.src = "../assets/img/menu-aberto.png";
+      img_Menu_Aberto.classList.add("fechado");
+      img_Menu_Aberto.classList.remove("aberto");
+      mobile.style.display = "none";
+    }
+  });
+});
 
 // função para quando entrar na página, as div se movem para a esquerda, para cima e para baixo
 
@@ -43,8 +80,8 @@ scrollBaixo.forEach((item) => {
 // Evento de click para a tabela de horários, fazem a troca da tabela de segunda a sexta para sábado e de sábado para segunda e sexta
 
 sab.addEventListener("click", (e) => {
-  tabela_Horarios.classList.add("clicou");
   setTimeout(() => {
+    tabela_Horarios.classList.add("clicou");
     tabela_Horarios.classList.add("display_none");
   }, 1000);
 
@@ -56,8 +93,8 @@ sab.addEventListener("click", (e) => {
 });
 
 seg_Sex.addEventListener("click", () => {
-  tabela_Horarios_Sab.classList.add("clicou");
   setTimeout(() => {
+    tabela_Horarios_Sab.classList.add("clicou");
     tabela_Horarios_Sab.classList.add("display_none");
   }, 1000);
   setTimeout(() => {
@@ -66,6 +103,8 @@ seg_Sex.addEventListener("click", () => {
     tabela_Horarios.classList.remove("clicou");
   }, 1100);
 });
+
+// Quando a página carregar completamente ele sai da logo e vai para a página completa, evento de LOAD
 
 window.addEventListener("load", () => {
   setTimeout(() => {

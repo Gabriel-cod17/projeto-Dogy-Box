@@ -47,7 +47,13 @@
   margin-left: 20px;
 }
 
-.img_Menu_Mobile img {
+.aberto {
+  width: 20px;
+  height: 20px;
+  border-radius: 1px solid black;
+}
+
+.fechado {
   width: 20px;
   height: 20px;
   border-radius: 1px solid black;
@@ -66,7 +72,7 @@
 .menu_mobile {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 40px;
   text-decoration: none;
 }
 
@@ -74,7 +80,7 @@
   text-decoration: none;
   color: white;
   padding: 0 5px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Roboto Slab", serif;
   transition: transform 0.3s ease;
   display: inline-block;
@@ -83,6 +89,25 @@
 .menu_mobile a:hover {
   color: red;
   transform: translateY(-2px);
+}
+
+.button_Menu_Agendar {
+  font-family: "Roboto Slab", serif;
+  font-size: 16px;
+  padding: 15px 20px;
+  margin: 0 12px;
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+  border-radius: 5px;
+  transition: transform 0.5s ease;
+  margin-top: 20px;
+}
+
+.button_Menu_Agendar:hover {
+  background-color: rgb(175, 1, 1);
+  border: 1px solid rgb(175, 1, 1);
+  transform: scale(1.1);
 }
 
 /* Estilizando a parte do hearde que é o cabeçalho e a parte da nav */
@@ -323,6 +348,7 @@
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .div_Treinos {
@@ -361,7 +387,7 @@
   border-radius: 20px;
   overflow: hidden;
   width: 340px;
-  height: 300px;
+  min-height: 300px;
   margin-top: 50px;
 }
 
@@ -391,7 +417,7 @@
   border: 1px solid #fff;
   border-radius: 20px;
   width: 340px;
-  height: 300px;
+  min-height: 300px;
   margin-top: 50px;
 
   overflow: hidden;
@@ -424,7 +450,7 @@
   border: 1px solid #fff;
   border-radius: 20px;
   width: 340px;
-  height: 300px;
+  min-height: 300px;
   margin-top: 50px;
 }
 .div_Hit::before {
@@ -550,7 +576,8 @@
   grid-template-columns: 1fr 1fr;
   background-color: #4a4a4ac9;
   place-items: center;
-  width: 350px;
+  width: 100%;
+  max-width: 600px;
   height: 80px;
   border: 1px solid #4a4a4ac9;
   border-radius: 20px;
@@ -592,7 +619,7 @@
   overflow: hidden;
   max-width: 1200px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 10px 10px;
 }
 
 .tabela_Horarios_Sab {
@@ -604,7 +631,7 @@
   overflow: hidden;
   max-width: 1200px;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 10px 10px;
 }
 
 .display {
@@ -698,7 +725,7 @@
   color: white;
 }
 
-.bt_Reserve {
+.bt_Agende {
   border: 1px solid red;
   border-radius: 20px;
   background-color: red;
@@ -809,10 +836,11 @@
   border: 1px solid red;
   border-radius: 20px;
   width: 100%;
-  height: 150px;
+  max-width: 600px;
+  min-height: 150px;
   background-color: red;
   margin-bottom: 20px;
-  padding: 0 10px;
+  padding: 0 10px 10px;
   overflow: hidden;
 }
 
@@ -827,7 +855,7 @@
   font-family: "Roboto Slab", serif;
   font-size: 18px;
   margin-top: 8px;
-  color: #898989;
+  color: #000;
 }
 
 .button_Agendar {
@@ -857,6 +885,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .links_Rapidos {
@@ -877,9 +906,12 @@
   font-family: "Roboto Slab", serif;
   font-size: 15px;
   padding-top: 5px;
-  color: red;
+  color: white;
 }
 
+.links_Rapidos a:hover {
+  color: red;
+}
 .figure_Img_Links img {
   width: 100px;
   height: 100px;
@@ -1037,5 +1069,15 @@
 
   .button_Agendar {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .div_Agendar h3 {
+    font-size: 10px;
+  }
+
+  .div_Agendar h4 {
+    font-size: 10px;
   }
 }
